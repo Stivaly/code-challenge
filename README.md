@@ -69,7 +69,7 @@ En Linux o Mac:
 
 ## Cómo ejecutar la consulta SQL
 
-Ingresa al siguiente link para ejecutar las consultas de agregación y segmentación del proyecto directamente en bigquery: 
+Ingresa al siguiente link para ejecutar las consultas de agregación y segmentación del proyecto directamente en BigQuery, luego de ejecutar el proceso ETL: 
     https://console.cloud.google.com/bigquery?sq=877558642730:c95480eb2fbd431d83e9d343fc874147
 
 ## Información Adicional
