@@ -32,6 +32,35 @@ Online Retail. (2015). UCI Machine Learning Repository. https://doi.org/10.24432
 ## Configuración del Ambiente
 
 1. **Credenciales de GCP**: Coloque el archivo de credenciales `.json` proporcionado por GCP en el directorio `keys/`.
+2. **Instalación de Google Cloud SDK**: Si aún no tiene instalado Google Cloud SDK en su máquina, siga las instrucciones en Google Cloud SDK Documentation para instalarlo.
+3. **Autenticación**:
+Una vez que tenga Google Cloud SDK instalado, ejecute el siguiente comando para autenticarse con su cuenta de Google:
+
+
+    gcloud auth login
+
+Luego, configure el proyecto de GCP que desea utilizar:
+
+
+    gcloud config set project [etl-code-challenge]
+
+4. Configuración de las Credenciales:
+
+Establezca la variable de entorno GOOGLE_APPLICATION_CREDENTIALS en su máquina apuntando a la ubicación del archivo de credenciales.
+
+    En Windows (Powershell):
+
+    powershell
+
+$env:GOOGLE_APPLICATION_CREDENTIALS="C:\ruta\completa\al\archivo\de\credenciales.json"
+
+En Linux o Mac:
+
+bash
+
+    export GOOGLE_APPLICATION_CREDENTIALS="/ruta/completa/al/archivo/de/credenciales.json"
+
+💡 Nota: Es importante establecer esta variable de entorno cada vez que abra una nueva sesión o ventana de terminal. Si está trabajando con un entorno de desarrollo específico o una herramienta que utilice sesiones persistentes, es posible que solo necesite hacerlo una vez por sesión.
 
 **Nota importante sobre la clave de servicio**
 
