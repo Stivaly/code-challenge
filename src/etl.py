@@ -57,8 +57,9 @@ def prepare():
         print(f"Error durante la preparación: {e}")
         raise
 
-try:
-    prepared_data = prepare()
-    load_data('online_retail', 'sales_transaction', '../data/temporales/temp_data.csv')
-except Exception as e:
-    print(f"Error general en el ETL: {e}")
+def run_etl_process():
+    try:
+        prepared_data = prepare()
+        load_data('online_retail', 'sales_transaction', '../data/temporales/temp_data.csv')
+    except Exception as e:
+        print(f"Error general en el ETL: {e}")
