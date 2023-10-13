@@ -1,6 +1,6 @@
 # Proyecto ETL con BigQuery
 
-Este proyecto consiste en un proceso ETL que extrae datos de un archivo CSV, los transforma y los carga en BigQuery. Fue desarrollado usando Python y las herramientas proporcionadas por Google Cloud Platform. Puedes ingresar al tablero de Jira donde se planificaron y abordaron los scripts en el siguiente link: https://codechallenge.atlassian.net/jira/software/projects/KAN/boards/1/timeline?shared=&atlOrigin=eyJpIjoiNGEzYThiY2RiYzJmNGZkMTgxY2M5N2NlMDc2MWY1YzQiLCJwIjoiaiJ9
+Este proyecto consiste en un proceso ETL que extrae datos de un archivo CSV, los transforma y los carga en BigQuery. Fue desarrollado usando Python y las herramientas proporcionadas por Google Cloud Platform. Puedes ingresar al tablero de Jira donde se planificaron y abordaron los scripts en el siguiente link: https://id.atlassian.com/invite/p/jira-software?id=WwbBTysGTx2ZoQookUadeA selecciona *Mi proyecto Kanban* y podrás ingresar al tablero.
 
 ## Requisitos
 
