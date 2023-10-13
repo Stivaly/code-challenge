@@ -72,6 +72,10 @@ En Linux o Mac:
 Ingresa al siguiente link para ejecutar las consultas de agregación y segmentación del proyecto directamente en BigQuery, luego de ejecutar el proceso ETL: 
     https://console.cloud.google.com/bigquery?sq=877558642730:c95480eb2fbd431d83e9d343fc874147
 
+## Configuración de Apache Airflow en AWS MWAA
+
+Utilicé Apache Airflow en conjunto con AWS Managed Workflows for Apache Airflow (MWAA) para automatizar el proceso de Extracción, Transformación y Carga (ETL) del archivo CSV. La automatización se logra mediante la programación de flujos de trabajo definidos en DAGs de Airflow. Los pasos clave de configuración incluyen la creación de un entorno MWAA, la subida de DAGs y dependencias a un bucket de Amazon S3, y la programación de ejecuciones periódicas de los flujos de trabajo para la ETL. 
+
 ## Información Adicional
 
 *Notas sobre la Carga de Datos en BigQuery*
