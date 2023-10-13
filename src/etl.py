@@ -4,11 +4,15 @@ import os
 
 # Realizamos referencia a nuestra llave
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "keys/etl-code-challenge-42c88c66e88d.json"
+# Creamos rutas relativas en el entorno
+script_dir = os.path.dirname(__file__)
+file_path = os.path.join(script_dir, '..', 'data', 'source', 'online_retail.csv')
+
 
 def extract():
     try:
         # Leer el archivo CSV con el Framework PANDAS
-        online_retail = pd.read_csv("../data/source/online_retail.csv", encoding='utf-8')
+        online_retail = pd.read_csv(file_path, encoding='utf-8')
         return online_retail
     except Exception as e:
         print(f"Error durante la extracción: {e}")
@@ -51,15 +55,24 @@ def prepare():
         #Transformamos archivo a CSV para su facilidad de subida
         online_retail = extract()
         processed_online_retail = transform(online_retail)
-        processed_online_retail.to_csv("../data/temporales/temp_data.csv", index=False, encoding='utf-8')
-        return processed_online_retail
+
+        # Obtenemos la ubicación del directorio del script
+        script_dir = os.path.dirname(__file__)
+
+        # Construimos la ruta completa al archivo de salida
+        output_file_path = os.path.join(script_dir, '..', 'data', 'temporales', 'temp_data.csv')
+
+        # Guardamos el DataFrame en el archivo CSV
+        processed_online_retail.to_csv(output_file_path, index=False, encoding='utf-8')
+
+        return processed_online_retail, output_file_path
     except Exception as e:
         print(f"Error durante la preparación: {e}")
         raise
 
 def run_etl_process():
     try:
-        prepared_data = prepare()
-        load_data('online_retail', 'sales_transaction', '../data/temporales/temp_data.csv')
+        prepared_data, output_file_path = prepare()
+        load_data('online_retail', 'sales_transaction', output_file_path)
     except Exception as e:
         print(f"Error general en el ETL: {e}")
