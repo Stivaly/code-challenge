@@ -1,0 +1,6 @@
+#( AutomatizacionEtl
+NoLog
+Time: * * * * *
+Action:
+    cmd /c C:\Users\Stiva\Desktop\codeChallenge\src\etl_script.py
+)#
