@@ -1,6 +1,6 @@
 # Proyecto ETL con BigQuery
 
-Este proyecto consiste en un proceso ETL que extrae datos de un archivo CSV, los transforma y los carga en BigQuery. Fue desarrollado usando Python y las herramientas proporcionadas por Google Cloud Platform.
+Este proyecto consiste en un proceso ETL que extrae datos de un archivo CSV, los transforma y los carga en BigQuery. Fue desarrollado usando Python y las herramientas proporcionadas por Google Cloud Platform. Puedes ingresar al tablero de Jira donde se planificaron y abordaron los scripts en el siguiente link: https://codechallenge.atlassian.net/jira/software/projects/KAN/boards/1/timeline?shared=&atlOrigin=eyJpIjoiNGEzYThiY2RiYzJmNGZkMTgxY2M5N2NlMDc2MWY1YzQiLCJwIjoiaiJ9
 
 ## Requisitos
 
@@ -11,6 +11,10 @@ Este proyecto consiste en un proceso ETL que extrae datos de un archivo CSV, los
 # Referencia de los datos CSV
 
 Online Retail. (2015). UCI Machine Learning Repository. https://doi.org/10.24432/C5BW33.
+
+# Pasos tecnicos
+
+En la carpeta docs del directorio encontrarás la arquitectura de software y el diagrama de flujo que se creo al inicio del proyecto. 
 
 ## Configuración del Ambiente
 
