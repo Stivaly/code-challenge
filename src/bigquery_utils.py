@@ -24,6 +24,7 @@ def load_data(dataset_name, table_name, file_path):
         source_format=bigquery.SourceFormat.CSV,
         skip_leading_rows=1,  # Ignorar la primera fila (encabezados)
         autodetect=True,  # Autodetecta el esquema (columnas y tipos) del CSV
+        write_disposition=bigquery.WriteDisposition.WRITE_TRUNCATE # Configuración de carga con WRITE_TRUNCATE
     )
 
     # Cargar el archivo CSV desde la ruta especificada
