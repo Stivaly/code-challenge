@@ -1,6 +1,11 @@
-# Proyecto ETL con BigQuery
+# Proyecto ETL con BigQuery: Automatizando el análisis de datos de comercio electrónico
 
-Este proyecto consiste en un proceso ETL que extrae datos de un archivo CSV, los transforma y los carga en BigQuery. Fue desarrollado usando Python y las herramientas proporcionadas por Google Cloud Platform. Puedes ingresar al tablero de Jira donde se planificaron y abordaron los scripts en el siguiente link: https://id.atlassian.com/invite/p/jira-software?id=WwbBTysGTx2ZoQookUadeA selecciona *Mi proyecto Kanban* y podrás ingresar al tablero.
+Este proyecto implementa un proceso ETL que extrae datos de un archivo CSV, los transforma y los carga en BigQuery. El proyecto fue desarrollado usando Python y las herramientas proporcionadas por Google Cloud Platform. Puedes ingresar al tablero de Jira donde se planificaron y abordaron los scripts en el siguiente link: https://id.atlassian.com/invite/p/jira-software?id=WwbBTysGTx2ZoQookUadeA selecciona *Mi proyecto Kanban* y podrás ingresar al tablero.
+
+## Objetivo
+Automatizar el análisis de datos de comercio electrónico. El proceso ETL extrae datos de un archivo CSV que contiene información sobre transacciones de ventas. Los datos se transforman para que cumplan con los requisitos de BigQuery. Luego, los datos se cargan en BigQuery, donde se pueden analizar para obtener información sobre el comportamiento de los clientes, las tendencias de ventas y otros datos relevantes.
+
+El proyecto está diseñado para ser escalable y extensible. El proceso ETL puede adaptarse para procesar archivos de datos de diferentes tamaños y formatos. Además, el proyecto puede ampliarse para incluir otras fuentes de datos, como bases de datos relacionales o almacenes de datos.
 
 ## Requisitos
 
